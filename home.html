@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{%  block content %}
+
+<h1>Database Results</h1>
+{% for item in results %}
+<h3>Name: {{item.Name}},  AccountNumber: {{item. AccountNumber}}, IFSCCode: {{item.IFSCCode}},   EnterAmount: {{item. EnterAmount}},  ChooseyourBankName: {{item. ChooseyourBankName}},UploadChequeImage: {{item. UploadChequeImage}} </h3>
+{% endfor %}
+
+{% endblock %}
